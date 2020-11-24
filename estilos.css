@@ -16,6 +16,31 @@ body{
     position: relative;
 }
 
+#listaTiradas{
+    color: white;
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: none;
+}
+
+#instrucciones{
+    color: white;
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#instrucciones>p{
+    margin-bottom: 8px;
+}
+
 .slots{
     position: absolute;
     top: 418px;
