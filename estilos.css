@@ -61,6 +61,12 @@ body{
     background-color: blue;
 }
 
+#botonReiniciar{
+    left: 220px;
+    width: 70px;
+    background-color: rgb(177, 177, 177);
+}
+
 #ranuraMonedas{
     top: 596px;
     background-color: rgb(29, 29, 29);
@@ -68,6 +74,7 @@ body{
     width: 4px;
     left: 370px;
     border: 1px black solid;
+    box-shadow: black 0px 0px 3px;
 }
 
 #bocadillo{

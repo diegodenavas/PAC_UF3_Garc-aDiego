@@ -7,6 +7,7 @@ window.onload = function() {
 
     var botonTirar = document.getElementById("botonTirar");
     var botonSalir = document.getElementById("botonSalir");
+    var botonReiniciar = document.getElementById("botonReiniciar");
 
     var ranuraMonedas = document.getElementById("ranuraMonedas");
 
@@ -18,11 +19,7 @@ window.onload = function() {
 
     var monedas = 0;
 
-    let num1 = random();
-    let num2 = random();
-    let num3 = random();
-
-    cargarSlots(num1, num2, num3);
+    cargarSlots(random(), random(), random());
     animarBotones();
 
     function animarBotones(){
@@ -53,6 +50,15 @@ window.onload = function() {
     //Accion al pulsar el boton salir
     botonSalir.addEventListener("click", function(){
         alert(monedas);
+    }, false);
+
+    //Accion al pulsar el boton de reiniciar
+    botonReiniciar.addEventListener("click", function(){
+        monedas = 0;
+        ranuraMonedas.removeAttribute("disabled");
+        botonTirar.setAttribute("disabled", "");
+        botonSalir.setAttribute("disabled", "");
+        bocadillo.style.backgroundImage = "url('imagenes/bocadilloComic.png')";
     }, false);
 
 
@@ -89,8 +95,8 @@ window.onload = function() {
     }
 
 
-    function cargarSlots(numero1, numero2, numero3) {
 
+    function cargarSlots(numero1, numero2, numero3) {
         slot1.style.backgroundImage = "url('imagenes/" + array1[numero1] + ".png')";
         slot2.style.backgroundImage = "url('imagenes/" + array2[numero2] + ".png')";
         slot3.style.backgroundImage = "url('imagenes/" + array3[numero3] + ".png')";
@@ -140,11 +146,7 @@ window.onload = function() {
 
 
 
-
-
     //------------------------------------------------------------------------------------------------------------------------------
-
-
 
 
 
