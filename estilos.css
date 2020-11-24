@@ -1,0 +1,112 @@
+body{
+    background-image: url("imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#contenedorFondo{
+    height: 930px;
+    width: 460px;
+    background-image: url("imagenes/tragaperras.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+}
+
+.slots{
+    position: absolute;
+    top: 418px;
+    width: 102px;
+    height: 96px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#slot1{
+    left: 73px;
+    background-image: url("imagenes/ajo.png");
+}
+
+#slot2{
+    left: 178px;
+    background-image: url("imagenes/ajo.png");
+}
+
+#slot3{
+    left: 284px;
+    background-image: url("imagenes/ajo.png");
+}
+
+.botones{
+    position: absolute;
+    top: 602px;
+    height: 25px;
+    width: 60px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#botonTirar{
+    left: 60px;
+    background-color: rgb(255, 255, 81);
+}
+
+#botonSalir{
+    left: 140px;
+    background-color: blue;
+}
+
+#ranuraMonedas{
+    top: 596px;
+    background-color: rgb(29, 29, 29);
+    height: 40px;
+    width: 4px;
+    left: 370px;
+    border: 1px black solid;
+}
+
+#bocadillo{
+    position: absolute;
+    top: 360px;
+    left: 270px;
+    background-image: url("imagenes/bocadilloComic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 450px;
+    height: 250px;
+    z-index: 100;
+}
+
+#mensajeVictoria{
+    height: 130px;
+    width: 356px;
+    position: absolute;
+    top: 200px;
+    left: 55px;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#iconoMensajeVictoria{
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    background-image: url("imagenes/mensajesVictoria/3zanahorias/estrellatriplezanahoria.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
