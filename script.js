@@ -125,6 +125,7 @@ window.onload = function() {
         bocadillo.style.backgroundImage = "url('imagenes/bocadilloComic.png')";
         listaTiradas.style.display = "none";
         instrucciones.style.display = "block";
+        iconoMensajeVictoria.style.display = "none";
     }
 
 
@@ -212,12 +213,14 @@ window.onload = function() {
         listaTiradas.style.display = "none";
         iconoMensajeVictoria.style.display = "flex";
 
+        botonTirar.setAttribute("disabled", "");
+        botonReiniciar.setAttribute("disabled", "");
+
         switch(opcion){
 
             case 1:
                 contenedorMensajes.style.backgroundImage = "url('imagenes/mensajesVictoria/1zanahoria/fondozana.jpg')";
                 iconoMensajeVictoria.style.backgroundImage = "url('imagenes/mensajesVictoria/1zanahoria/iconozana.png')"
-                botonTirar.setAttribute("disabled", "");
                 iconoMensajeVictoria.style.color = "black";
                 rutaImagenFondo = "1zanahoria/fondozana2.jpg";
                 break;
@@ -225,7 +228,6 @@ window.onload = function() {
             case 2:
                 contenedorMensajes.style.backgroundImage = "url('imagenes/mensajesVictoria/2hortalizas/fondo2horta.jpg')";
                 iconoMensajeVictoria.style.backgroundImage = "url('imagenes/mensajesVictoria/2hortalizas/icono2hortalizas.png')"
-                botonTirar.setAttribute("disabled", "");
                 iconoMensajeVictoria.style.color = "white";
                 rutaImagenFondo = "2hortalizas/fondo2horta2.jpg";
                 break;
@@ -233,7 +235,6 @@ window.onload = function() {
             case 3:
                 contenedorMensajes.style.backgroundImage = "url('imagenes/mensajesVictoria/1zanahoriay2hortalizas/fondo1zana2horta.jpg')";
                 iconoMensajeVictoria.style.backgroundImage = "url('imagenes/mensajesVictoria/1zanahoriay2hortalizas/iconozana2horta.png')"
-                botonTirar.setAttribute("disabled", "");
                 iconoMensajeVictoria.style.color = "white";
                 rutaImagenFondo = "1zanahoriay2hortalizas/fondo21zana2horta.jpg";
                 break;
@@ -241,7 +242,6 @@ window.onload = function() {
             case 4:
                 contenedorMensajes.style.backgroundImage = "url('imagenes/mensajesVictoria/2zanahorias/fondo2zana.jpg')";
                 iconoMensajeVictoria.style.backgroundImage = "url('imagenes/mensajesVictoria/2zanahorias/icono2zana.png')"
-                botonTirar.setAttribute("disabled", "");
                 iconoMensajeVictoria.style.color = "black";
                 rutaImagenFondo = "2zanahorias/fondo2zana2.jpg";
                 break;
@@ -249,7 +249,6 @@ window.onload = function() {
             case 5:
                 contenedorMensajes.style.backgroundImage = "url('imagenes/mensajesVictoria/3hortalizas/fondo3horta.jpg')";
                 iconoMensajeVictoria.style.backgroundImage = "url('imagenes/mensajesVictoria/3hortalizas/icono3hortalizas.png')"
-                botonTirar.setAttribute("disabled", "");
                 iconoMensajeVictoria.style.color = "black";
                 rutaImagenFondo = "3hortalizas/fondo3horta2.jpg";
                 break;
@@ -257,7 +256,6 @@ window.onload = function() {
             case 6:
                 contenedorMensajes.style.backgroundImage = "url('imagenes/mensajesVictoria/3zanahorias/fondo3zanahorias.jpg')";
                 iconoMensajeVictoria.style.backgroundImage = "url('imagenes/mensajesVictoria/3zanahorias/estrellatriplezanahoria.png')"
-                botonTirar.setAttribute("disabled", "");
                 iconoMensajeVictoria.style.color = "black";
                 rutaImagenFondo = "3zanahorias/fondo2triplezanahoria.jpg";
                 break;
@@ -293,6 +291,7 @@ window.onload = function() {
             iconoMensajeVictoria.innerHTML = "";
             contenedorMensajes.style.backgroundImage = "none";
             botonTirar.removeAttribute("disabled");
+            botonReiniciar.removeAttribute("disabled");
             listaTiradas.style.display = "block";
             iconoMensajeVictoria.style.display = "none";
         }, 5000);
