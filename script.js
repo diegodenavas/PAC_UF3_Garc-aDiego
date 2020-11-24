@@ -154,14 +154,14 @@ window.onload = function() {
         }
 
         else if ((numero1 == 6 && numero2 == 6) || (numero1 == 6 && numero3 == 6) || (numero2 == 6 && numero3 == 6)) {
-            monedas = 4; //dos zanahorias
+            monedas += 4; //dos zanahorias
             mensajePremio(4);
             lista += "<p>-1; DOBLE ZANAHORIA: Monedas 4</p>" + lista;
             listaTiradas.innerHTML = lista;
         }
 
         else if ((numero1 == 6 || numero2 == 6 || numero3 == 6) && (numero1 == numero2 || numero1 == numero3 || numero2 == numero3)) {
-            monedas = 3; //una zanahoria y dos hortalizas iguales
+            monedas += 3; //una zanahoria y dos hortalizas iguales
             mensajePremio(3);
             lista = "<p>-1; DOBLE HORTALIZA Y ZANAHORIA: Monedas +3</p>" + lista;
             listaTiradas.innerHTML = lista;
